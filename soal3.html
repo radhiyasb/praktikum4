@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<script src="jquery-3.6.0.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+	$("#tombol_fade_out").click(function(){
+		$("#box").fadeOut("slow");
+	})
+	$("#tombol_fade_in").click(function(){
+		$("#box").fadeIn("fast");
+	})
+	$("#fadeto").click(function(){
+		$("#box").fadeTo("slow", 0.3)
+	})
+	});
+	
+</script>
+<style type="text/css">
+	
+	#box {
+		width: 200px;
+		height: 200px;
+		background-color: yellow;
+		border: all;
+
+	}
+</style>
+<body>
+
+	<div id="box"></div>
+	<br>
+	<button id="tombol_fade_out">FadeOut</button>
+	<button id="tombol_fade_in">FadeIn</button>
+	<button id="fadeto">Fade To 0.3</button>
+
+</body>
+</html>
